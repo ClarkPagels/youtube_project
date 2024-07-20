@@ -210,6 +210,16 @@ class convertFile(tk.Frame):
         button = ttk.Button(frm,command=convert,text="filepath/filename")
         button.grid(column=1, row=0)
         label = ttk.Label(frm,text="")
+        button3= ttk.Button(self, text="Startpage",
+                             command=lambda: controller.show_frame(startPage))
+        button3.grid(column=0, row=3)
+        button3 = ttk.Button(self, text="youtube download",
+                             command=lambda: controller.show_frame(youtube_download))
+        button3.grid(column=1, row=3)
+        button3 = ttk.Button(self, text="convert file",
+                             command=lambda: controller.show_frame(page2))
+        button3.grid(column=2, row=3)
+
         label.grid_forget()
 
 
