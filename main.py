@@ -6,6 +6,9 @@ import tkinter as tk
 from tkinter import ttk
 import tokenizer
 from converter import converter
+import matplotlib as mpl 
+import seaborn as sb
+import tensorflow as tf
 
 #vars
 #tkinter set up
