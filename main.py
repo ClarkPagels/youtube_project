@@ -9,6 +9,8 @@ from converter import converter
 import matplotlib as mpl 
 import seaborn as sb
 import tensorflow as tf
+import zipf from plots/zipflaw.py  as zipf
+import barChart from plots/top_10_words.py as bc
 
 #vars
 #tkinter set up
@@ -32,7 +34,7 @@ class tkinterApp(tk.Tk):
 
         # iterating through a tuple consisting
         # of the different page layouts
-        for F in (youtube_download, page2,convertFile):
+        for F in (youtube_download, page2,convertFile, grapher):
             frame = F(container, self)
 
             # initializing frame of that object from
@@ -198,6 +200,9 @@ class page2(tk.frame):
         button3 = ttk.Button(self, text="convert file",
                              command=lambda: controller.show_frame(convertFile))
         button3.grid(column=2, row=3)
+        button4 = ttk.Button(self, text="convert file",
+                             command=lambda: controller.show_frame(grapher))
+        
 class convertFile(tk.Frame):
     def __init__(self,parent,controller):
         tk.Frame.__init__(self, parent)
@@ -223,7 +228,26 @@ class convertFile(tk.Frame):
                              command=lambda: controller.show_frame(page2))
         button3.grid(column=2, row=3)
 
-        label.grid_forget()
-
+        label.grid_forget() 
+#page for graphing stuff. 
+class grapher(tk.frame): 
+    def __init__(self,parent,controller):
+        tk.Frame.__init__(self, parent)
+        file1 = ttk.Entry(frm,text="file you want")
+        file1.grid(column=0, row=0)
+        file2 = ttk.Entry(frm,text = "second file")
+        file2.grid(column=0, row = 1)
+        button = ttk.Button(frm,command=convert,text="filepath/filename")
+        button.grid(column=1, row=0)
+        label = ttk.Label(frm,text="")
+        button2= ttk.Button(self, text="Startpage",
+                             command=lambda: controller.show_frame(startPage))
+        button2.grid(column=0, row=3)
+        button3 = ttk.Button(self, text="youtube download",
+                             command=lambda: controller.show_frame(youtube_download))
+        button3.grid(column=1, row=3)
+        button4 = ttk.Button(self, text="convert file",
+                             command=lambda: controller.show_frame(page2))
+        button4.grid(column=2, row=3)
 
 root.mainloop()
