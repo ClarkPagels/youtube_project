@@ -38,6 +38,8 @@ class cosine_simularity(file1, file2):
             c+= l1[i]*l2[i] 
         cosine = c / float((sum(l1)*sum(l2))**0.5) 
         print("similarity: ", cosine) 
+       
+        return cosine
         
     
 

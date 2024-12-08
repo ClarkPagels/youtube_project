@@ -17,6 +17,7 @@ from pages.startpage import startPage
 from pages.convertFile import convertFile
 from pages.page2 import page2 
 from pages.youtube_download import youtube_download 
+from analysis.cosine_simularity import cosine_simularity
 
 #vars
 #tkinter set up
