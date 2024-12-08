@@ -8,12 +8,7 @@ from tkinter import ttk
 import tokenizer
 from converter import converter
 import matplotlib as mpl 
-import seaborn as sb
-import tensorflow as tf
-from plots.zipflaw import zipf
-from plots.top_10_words import barChart
 from pages.grapher import grapher
-from pages.startpage import startPage
 from pages.convertFile import convertFile
 from pages.page2 import page2 
 from pages.youtube_download import youtube_download 
@@ -26,7 +21,10 @@ class startPage(tk.Frame):
         button.grid(column=0, row=0)
         button1 = ttk.Button(self, text="convert file",
                              command=lambda: controller.show_frame(converter))
-        button1.grid(column=1, row=0)
+        button1.grid(column=0, row=1)
         button2 = ttk.Button(self, text="text analysis",
                              command=lambda: controller.show_frame(page2))
-        button2.grid(column=2, row=0)
+        button2.grid(column=0, row=2)
+        button3 = ttk.Button(self, text="graphing files",
+                             command=lambda: controller.show_frame(grapher))
+        button3.grid(column=0, row=3)

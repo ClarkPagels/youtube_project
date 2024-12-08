@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import re
+import pickle 
 def zipf(text):
 
     #Convert text to lower case
@@ -47,5 +48,9 @@ def zipf(text):
 
     # Providing a title to the graph
     plt.title("Zipf's law")
+    #save graph
+    with open('youtube_project\Downloads\charts', 'wb') as f:
+        pickle.dump(plt, f)
     
     plt.show()
+    

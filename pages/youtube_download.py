@@ -84,11 +84,13 @@ class youtube_download(tk.Frame):
 
         download_video = ttk.Button(frm,text = "download video",
                            command=download_video)
-        download_vidk    command=lambda: controller.show_frame(page2))
-        button2.grid(column = 0, row = 0)
+        download_video.grid()
+        button1  = ttk.Button(self, text="page 2",     
+                              command=lambda: controller.show_frame(page2))
+        button1.grid(column = 0, row = 0)
         button3 = ttk.Button(self, text="start page",
                              command=lambda: controller.show_frame(startPage))
         button3.grid(column=0, row=3)
-        button4 = ttk.Button(self, text="youtube downloader",
-                             command=lambda: controller.show_frame(convertFile))
+        button4 = ttk.Button(self, text="gr",
+                             command=lambda: controller.show_frame(grapher))
         button4.grid(column=0, row=3)

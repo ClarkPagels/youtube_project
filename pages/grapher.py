@@ -23,11 +23,14 @@ class grapher(tk.frame):
         tk.Frame.__init__(self, parent)
         file1 = ttk.Entry(frm,text="file you want")
         file1.grid(column=0, row=0)
-        file2 = ttk.Entry(frm,text = "second file")
-        file2.grid(column=0, row = 1)
-        button = ttk.Button(frm,command=convert,text="filepath/filename")
-        button.grid(column=1, row=0)
-        label = ttk.Label(frm,text="")
+        file2 = ttk.Entry(frm,text = "second file if dessired")
+        file2.grid(column=1, row = 0)
+      
+        zipfer = ttk.Button(self, text="zipf for file 1",
+                          command = lambda: zipf(file1))
+        zipfer.grid(column=0, row=2)
+        barCharter = ttk.button(self, text="barchart words", 
+                                command= lambda: barChart(file1))
         button2= ttk.Button(self, text="Startpage",
                              command=lambda: controller.show_frame(startPage))
         button2.grid(column=0, row=3)

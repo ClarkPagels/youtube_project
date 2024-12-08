@@ -42,5 +42,8 @@ class convertFile(tk.Frame):
         button3 = ttk.Button(self, text="convert file",
                              command=lambda: controller.show_frame(page2))
         button3.grid(column=2, row=3)
+        button4 = ttk.Button(self, text="graphing files",
+                             command=lambda: controller.show_frame(grapher))
+        button4.grid(column=0, row=3)
 
         label.grid_forget() 
