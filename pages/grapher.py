@@ -12,7 +12,6 @@ import seaborn as sb
 import tensorflow as tf
 from plots.zipflaw import zipf
 from plots.top_10_words import barChart
-from pages.grapher import grapher
 from pages.startpage import startPage
 from pages.convertFile import convertFile
 from pages.page2 import page2 
