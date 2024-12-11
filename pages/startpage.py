@@ -4,12 +4,12 @@ import tkinter as tk
 from tkinter import ttk
 from . import tokenizer
 from ..converter import converter
-import matplotlib as mpl 
-from ..pages.grapher import grapher
-from ..pages.convertFile import convertFile
-from ..pages.page2 import page2 
-from ..pages.youtube_download import youtube_download 
 
+from grapher import grapher
+from convertFile import convertFile
+from page2 import page2 
+from youtube_download import youtube_download 
+from ..main import frm
 class startPage(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)

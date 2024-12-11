@@ -1,18 +1,12 @@
-from analyizer import VideoToText as vt
+from . import tokenizer 
 import tkinter as tk
 from tkinter import ttk
-import tokenizer
-from converter import converter
-import matplotlib as mpl 
-import seaborn as sb
-import tensorflow as tf
-from plots.zipflaw import zipf
-from plots.top_10_words import barChart
-from pages.grapher import grapher
-from pages.startpage import startPage
-from pages.convertFile import convertFile
-from pages.youtube_download import youtube_download 
-from analysis.cosine_simularity import cosine_simularity
+from grapher import grapher
+from startpage import startPage
+from convertFile import convertFile
+from youtube_download import youtube_download 
+from ..analysis.cosine_simularity.cosine_simularity import cosine_simularity
+from ..main import frm
 
 
 class page2(tk.frame):

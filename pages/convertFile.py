@@ -6,6 +6,7 @@ from ..converter import converter
 from grapher import grapher
 from startpage import startPage
 from page2 import page2 
+from ..main import frm 
 
 class convertFile(tk.Frame):
     def __init__(self,parent,controller):
