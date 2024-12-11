@@ -1,17 +1,17 @@
-from analyizer import VideoToText as vt
+
 import tkinter as tk
 from tkinter import ttk
-import tokenizer
-from converter import converter
-import matplotlib as mpl 
-import seaborn as sb
-import tensorflow as tf
-from plots.zipflaw import zipf
-from plots.top_10_words import barChart
-from pages.grapher import grapher
-from pages.startpage import startPage
-from pages.convertFile import convertFile
-from pages.page2 import page2 
+
+from ..converter import converter
+
+from ..plots.zipflaw import zipf
+from ..plots.top_10_words import barChart
+from grapher import grapher
+from startpage import startPage
+from convertFile import convertFile
+from analyizer import VideoToText as vt
+from page2 import page2 
+from ..main import frm
 
 
 class youtube_download(tk.Frame):
@@ -33,7 +33,7 @@ class youtube_download(tk.Frame):
             filename= fileInput.get()
         def download_video():
             try:
-                yt(path_variable, link_var, filename)
+                vt(path_variable, link_var, filename)
                 Notification.grid(column=0,row=3)
             except:
                 error.grid(column=1,row=3)

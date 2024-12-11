@@ -1,12 +1,8 @@
 import tkinter
-from youtube_download import youtube as yt
-from ..analyizer import VideoToText as vt
+from youtube_download import youtube_download
 import tkinter as tk
 from tkinter import ttk
-from . import tokenizer
 from ..converter import converter
-from ..plots.zipflaw import zipf
-from ..plots.top_10_words import barChart
 from grapher import grapher
 from startpage import startPage
 from page2 import page2 

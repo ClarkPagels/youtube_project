@@ -1,17 +1,14 @@
 import tkinter
-from pages.youtube_download import youtube_download
-
-from youtube_download import youtube as yt
-from analyizer import VideoToText as vt
+from ..analyizer import VideoToText as vt
 import tkinter as tk
 from tkinter import ttk
-import tokenizer
-from converter import converter
+from . import tokenizer
+from ..converter import converter
 import matplotlib as mpl 
-from pages.grapher import grapher
-from pages.convertFile import convertFile
-from pages.page2 import page2 
-from pages.youtube_download import youtube_download 
+from ..pages.grapher import grapher
+from ..pages.convertFile import convertFile
+from ..pages.page2 import page2 
+from ..pages.youtube_download import youtube_download 
 
 class startPage(tk.Frame):
     def __init__(self, parent, controller):
