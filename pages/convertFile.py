@@ -18,7 +18,7 @@ class convertFile(tk.Frame):
              look in folder for new file""")
             label.grid(column=2,row=0)
 
-        entry = ttk.Entry(frm,text="Convert file")
+        entry = ttk.Entry(frm,text="Convert file link in system")
         entry.grid(column=0, row=0)
         button = ttk.Button(frm,command=convert,text="filepath/filename")
         button.grid(column=1, row=0)
