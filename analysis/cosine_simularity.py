@@ -2,7 +2,7 @@ import nltk
 from nltk.corpus import stopwords 
 from nltk.tokenize import word_tokenize 
 
-class cosine_simularity(file1, file2):
+def cosine_simularity():
     text1 = ""
     text = ""
     X_list = []

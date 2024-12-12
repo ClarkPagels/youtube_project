@@ -5,14 +5,14 @@ from grapher import grapher
 from startpage import startPage
 from convertFile import convertFile
 from youtube_download import youtube_download 
-from ..analysis.cosine_simularity import cosine_simularity
+from analysis.cosine_simularity import cosine_simularity
 from ..main import frm
 
 
 class page2(tk.frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
-
+        
         def word_Counter():
             input = textBox.get(1.0,"end-1c")
             answer = tokenizer.wordCounter(input)
@@ -28,8 +28,9 @@ class page2(tk.frame):
         def cosineSimularity():
             file1 = textBox3.get(1.0,"end-1c")
             file2 =  textBox4.get(1.0,"end-1c")
-            cosineSimularity = new cosine_simularity(file1, file2)
-            answer = conseSimularity.cosine_simularity
+            cosineSimularity =  cosine_simularity(file1, file2)
+            answer = conseSimularity.cosine_simularity() 
+            
         textBox = ttk.Text(frm, text="""file you want to read text from""")
         textBox.grid(column=0, row=0)
         button = ttk.Button(frm, text = "Sentiment", command=word_Counter)
