@@ -30,6 +30,7 @@ class page2(tk.frame):
             file2 =  textBox4.get(1.0,"end-1c")
             cosineSimularity =  cosine_simularity(file1, file2)
             answer = cosineSimularity.cosine_simularity() 
+            number3.configure(text=answer)
             
         textBox = ttk.Text(frm, text="""file you want to read text from""")
         textBox.grid(column=0, row=0)
