@@ -1,8 +1,9 @@
 import nltk
-nltk.download('dot')
-import spacy
 from textblob import TextBlob
 from collections import Counter
+import spacy
+
+nltk.download('dot')
 
 def fileToText(text):
     with open(text) as f:
