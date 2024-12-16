@@ -8,7 +8,6 @@ from ..plots.zipflaw import zipf
 from ..plots.top_10_words import barChart
 from grapher import grapher
 from startpage import startPage
-from convertFile import convertFile
 from analyizer import VideoToText as vt
 from page2 import page2 
 from ..main import frm

@@ -2,9 +2,6 @@ import tkinter
 from ..analyizer import VideoToText as vt
 import tkinter as tk
 from tkinter import ttk
-from . import tokenizer
-from ..converter import converter
-
 from grapher import grapher
 from convertFile import convertFile
 from page2 import page2 
@@ -17,7 +14,7 @@ class startPage(tk.Frame):
                              command=lambda: controller.show_frame(youtube_download))
         button.grid(column=0, row=0)
         button1 = ttk.Button(self, text="convert file",
-                             command=lambda: controller.show_frame(converter))
+                             command=lambda: controller.show_frame(convertFile))
         button1.grid(column=0, row=1)
         button2 = ttk.Button(self, text="text analysis",
                              command=lambda: controller.show_frame(page2))

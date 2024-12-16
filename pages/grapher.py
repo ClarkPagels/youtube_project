@@ -1,7 +1,6 @@
 import tkinter
 import tkinter as tk
 from tkinter import ttk
-from . import tokenizer
 from ..plots.zipflaw import zipf
 from ..plots.top_10_words import barChart
 from startpage import startPage
@@ -32,3 +31,6 @@ class grapher(tk.frame):
         button4 = ttk.Button(self, text="convert file",
                              command=lambda: controller.show_frame(page2))
         button4.grid(column=2, row=3)
+        button= ttk.Button(self, text="Startpage",
+                             command=lambda: controller.show_frame(convertFile))
+        button.grid(column=3, row=3)
