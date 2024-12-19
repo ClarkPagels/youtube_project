@@ -6,7 +6,7 @@ from ..plots.top_10_words import barChart
 from startpage import startPage
 from convertFile import convertFile
 from page2 import page2 
-from .youtube_download import youtube_download 
+from ..youtube_download import youtube_download 
 from ..main import frm
 
 class grapher(tk.frame): 
