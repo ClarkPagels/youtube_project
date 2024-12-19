@@ -1,5 +1,4 @@
 from pytube import YouTube
-from analyizer import VideoToText as vt
 #download video to a save path from link
 #code from https://www.geeksforgeeks.org/pytube-python-library-download-youtube-videos/
 def youtube(SAVE_PATH, link, filename):

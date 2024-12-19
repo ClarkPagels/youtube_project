@@ -2,7 +2,6 @@
 import moviepy.editor as mp
 import speech_recognition as sr
 text = ""
-
 def converter(video_path):
     #make video file
     video = mp.VideoFileClip(video_path)
