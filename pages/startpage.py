@@ -1,5 +1,4 @@
-import tkinter
-from ..analyizer import VideoToText as vt
+
 import tkinter as tk
 from tkinter import ttk
 from grapher import grapher
