@@ -29,7 +29,7 @@ class tkinterApp(tk.Tk):
 
         # iterating through a tuple consisting
         # of the different page layouts
-        for F in (youtube_download, page2,convertFile, grapher):
+        for F in (youtube_download, startPage, page2,convertFile, grapher):
             frame = F(container, self)
 
             # initializing frame of that object from
@@ -55,11 +55,4 @@ frm = ttk.Frame(root, padding=10)
 frm.grid()
 
 root.geometry("400x400")
-
-
-
-
-#page for graphing stuff. 
-
-
 root.mainloop()

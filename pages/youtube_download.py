@@ -4,6 +4,7 @@ from tkinter import ttk
 from grapher import grapher
 from startpage import startPage
 from ..analyizer import VideoToText as vt
+from convertFile import convertFile
 from page2 import page2 
 from ..main import frm
 
@@ -88,3 +89,6 @@ class youtube_download(tk.Frame):
         button4 = ttk.Button(self, text="gr",
                              command=lambda: controller.show_frame(grapher))
         button4.grid(column=0, row=3)
+        button5 = ttk.Button(self, text="gr",
+                             command=lambda: controller.show_frame(convertFile))
+        button5.grid(column=0, row=4)
