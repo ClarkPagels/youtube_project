@@ -4,8 +4,8 @@ from tkinter import ttk
 from grapher import grapher
 from convertFile import convertFile
 from page2 import page2 
-from youtube_download import youtube_download 
-from ..main import frm
+from youtube_download_page import youtube_download 
+#from ..main import frm
 class startPage(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)

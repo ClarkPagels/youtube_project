@@ -6,7 +6,7 @@ from ..plots.top_10_words import barChart
 from startpage import startPage
 from convertFile import convertFile
 from page2 import page2 
-from ..youtube_download import youtube_download 
+from youtube_download_page import youtube_download as ydp
 from ..main import frm
 
 class grapher(tk.frame): 
@@ -26,7 +26,7 @@ class grapher(tk.frame):
                              command=lambda: controller.show_frame(startPage))
         button2.grid(column=0, row=3)
         button3 = ttk.Button(self, text="youtube download",
-                             command=lambda: controller.show_frame(youtube_download))
+                             command=lambda: controller.show_frame(ydp))
         button3.grid(column=1, row=3)
         button4 = ttk.Button(self, text="convert file",
                              command=lambda: controller.show_frame(page2))
